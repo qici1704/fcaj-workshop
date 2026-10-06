@@ -5,53 +5,48 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Connect and get acquainted with the members of First Cloud AI Journey.
+* Understand basic AWS services and how to use the console & CLI.
+* Understand the basics of securing an AWS account.
+* Understand the concepts and purposes of IAM Role and IAM User.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                   | Start date | Completion date | Reference material                         |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Get acquainted with FCAJ members <br> - Read and take note of the rules and regulations at the internship organization                                                                                             | 28/09/2026   | 28/09/2026      |
+| 3   | - Learn what AWS is and the basic types of services<br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + IAM Role & IAM User <br>                                            | 29/09/2026   | 29/09/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Create an AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Hands-on practice:** <br>&emsp; + Create an AWS account <br>&emsp; + Install and configure AWS CLI <br> &emsp; + How to use AWS CLI | 30/09/2026   | 30/09/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Learn about security for the AWS Root User <br>&emsp; + Multi-factor authentication (MFA) <br>&emsp; + Access Key management <br>&emsp; + Restrict permissions when creating IAM accounts <br> - Learn about IAM User <br>&emsp; + How to create an Access Key <br>&emsp; + IAM Role <br>&emsp; + AWS Managed Policy <br> - **Hands-on practice:** <br>&emsp; + Create IAM User accounts and IAM Role <br>&emsp; + Customize policies for each IAM User <br>&emsp; + Set up multi-factor authentication steps to improve security                  | 01/10/2026   | 01/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Learn about Budget in AWS <br> - Get familiar with the Hugging Face interface <br>-**Hands-on practice** <br>&emsp; + Create a budget for your AWS account                                                                                          | 02/10/2026   | 02/10/2026      | <https://cloudjourney.awsstudygroup.com/> <br> <https://huggingface.co/>|
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
+* Interacted with some FCAJ members.
+
+* Understood what AWS is and learned the basic service categories:
   * Compute
   * Storage
-  * Networking 
+  * Networking
   * Database
-  * ...
+  * IAM Role & IAM User
 
 * Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Became familiar with AWS Management Console and learned how to find, access, and use services through the web interface.
 
 * Installed and configured AWS CLI on the computer, including:
   * Access Key
   * Secret Key
   * Default Region
-  * ...
 
-* Used AWS CLI to perform basic operations such as:
+* Created IAM accounts and customized their permissions, then enabled other members to log in:
+  * Used the AdministratorAccess policy
+  * Created a separate IAM User account for each of the other members
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Improved the security of the AWS account.
+* Understood what Hugging Face is used for and became familiar with its interface.
