@@ -1,57 +1,80 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 2026-10-05
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Review Machine Learning fundamentals: Cost Function, Gradient Descent, Cross-Validation, data types, Feature Scaling, and One-Hot Encoding.
+* Learn about basic AWS services; practice with EC2, AMI, EBS, and S3.
+* Learn about Serverless, AWS Lambda, and AWS Fargate; compare how these services and EC2 apply to different use cases.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Review the uses and meaning of the cost function in machine learning <br> - Review training a model with Gradient Descent                                                                                             | 05/10/2026   | 05/10/2026      |
+| 3   | - Learn about AWS and the types of services: <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>                                            | 06/10/2026   | 06/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Learn about Cross-Validation to make the most of data in machine learning <br> - Process Categorial data & One-Hot Encoding: <br>&emsp; + Nominal & Ordinal Data <br>&emsp; + One-Hot method for Nominal data <br> - Feature Scaling methods: <br>&emsp; + Standardization <br>&emsp; + Min-Max Normalization <br> - **Practice:** <br>&emsp; + Split the dataset into Train/Test/Valid sets <br>&emsp; + Practice Feature Scaling on a dataset <br> &emsp; + Practice using the One-Hot method for Nominal data | 07/10/2026   | 07/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Learn the basics of EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + Instance Lifecycle <br> - Ways to remotely SSH into EC2 <br> - Learn about Elastic IP <br> - Learn the basics of S3: <br>&emsp; + Bucket, Object, Key <br>&emsp; + Storage Class <br>&emsp; + Versioning <br>&emsp; + Multipart Upload <br>&emsp; + Access permissions <br> - **Practice:** <br>&emsp; + Create and SSH into an EC2 <br>&emsp; + Attach EBS to an EC2 <br>&emsp; + Configure the environment                 | 08/10/2026   | 08/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Learn the basics of Serverless <br> - Learn about the AWS Lambda service <br> - Learn about the AWS Fargate service <br> - Compare EC2, Lambda, and Fargate in different scenarios <br> - **Practice:** <br>&emsp; + Grant EC2 access to S3 <br>&emsp; + Download data from S3 <br>&emsp; + Upload results to S3 and clean up resources to avoid incurring costs                                                                                         | 09/10/2026   | 09/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Week 2 Achievements:
+### Week 2 Results:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understand what gradient descent means and how gradient descent works in a machine learning model.
+  * The concept of Gradient descent
+  * The role Gradient descent plays in a machine learning model and its effects on the function's parameters
+  * The Gradient descent algorithm
+  * What a model trained with Gradient descent looks like internally
+  * The relationship between Gradient descent and Learning rate
 
-* Successfully created and configured an AWS Free Tier account.
+* Distinguish the data types of each Feature:
+  * Nominal
+  * Ordinal
+  * Ratio
+  * Interval
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Understand how to apply Feature Scaling and its methods:
+  * When to use Feature Scaling
+  * Standardization and its applications
+  * Min-Max Normalization and its applications
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Learn how to use One-Hot Encoding on a Nominal dataset so that the model does not receive noise when training.
 
-* Used AWS CLI to perform basic operations such as:
+* Understand the applications of EC2 and the relationship between EC2 and AMI.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Create an EC2 using the default VPC, including:
+  * Instance Type
+  * EBS (Elastic Block Store)
+  * Key Pair
+  * Elastic ID
+  * Security Group
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Distinguish between Instance Store and EBS, and when to store data in each.
+
+* Know how to choose the appropriate Instance Type for each task:
+  * P or G families: Have NVIDIA GPUs. Mainly used to train Deep Learning models or run heavy models (such as LLMs)
+  * R family: A lot of RAM. Used when processing large amounts of data that require loading the entire dataset into memory
+  * C family: A lot of CPU. Used to process logic and crawl data at high speed
+  * T or M families: Balanced CPU/RAM. Used as a Web Server or to run a regular backend API
+
+* Understand the basics of S3:
+  * Know how to choose the right S3 option for the need
+  * Understand how the S3 Multipart Upload feature works
+  * Know how to customize access permissions for specific objects
+
+* Data should be compressed before uploading to S3 to significantly reduce Request costs (For example: compress 1 million different .png files into one .zip file).
+
+* Understand what Serverless is and when Serverless should be used.
+
+* Know how to apply services such as EC2, Lambda, and Fargate in different scenarios based on:
+  * Cost
+  * Latency
+  * Scaling speed
+  * AI training support
+  * Startup latency
+

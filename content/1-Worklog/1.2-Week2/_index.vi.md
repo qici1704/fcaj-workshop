@@ -16,10 +16,10 @@ pre: " <b> 1.2. </b> "
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | 2   | - Ôn tập về các công dụng và ý nghĩa của hàm chi phí trong học máy <br> - Ôn tập về việc huấn luyện một mô hình với Gradient Descent                                                                                             | 05/10/2026   | 05/10/2026      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Tìm hiểu AWS và các loại dịch vụ: <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>                                            | 06/10/2026   | 06/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Tìm hiểu về Cross-Validation để tận dụng tối đa dữ liệu trong học máy <br> - Xử lí dữ liệu Categorial & One-Hot Encoding: <br>&emsp; + Nominal & Ordinal Data <br>&emsp; + Phương pháp One-Hot cho Nominal data <br> - Phương pháp cho Feature Scaling: <br>&emsp; + Standardization <br>&emsp; + Min-Max Normalization <br> - **Thực hành:** <br>&emsp; + Chia tập Train/Test/Valid cho tập dữ liệu <br>&emsp; + Thực hành Feature Scaling cho một tập dữ liệu <br> &emsp; + Thực hành dùng phương pháp One-Hot cho Nominal data | 07/10/2026   | 07/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + Instance Lifecycle <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP <br> - Tìm hiểu cơ bản về S3: <br>&emsp; + Bucket, Object, Key <br>&emsp; + Storage Class <br>&emsp; + Quản lý phiên bản <br>&emsp; + Multipart Upload <br>&emsp; + Quyền truy cập <br> - **Thực hành:** <br>&emsp; + Tạo và SSH vào một EC2 <br>&emsp; + Gắn EBS vào một EC2 <br>&emsp; + Cấu hình môi trường <br>&emsp; + Cho EC2 truy cập vào S3 + Download dữ liệu từ S3 + Upload kết quả lên S3 và dọn tài nguyên tránh phát sinh chi phí                 | 08/10/2026   | 08/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tìm hiểu cơ bản về Serverless <br> - Tìm hiểu về dịch vụ AWS Lambda <br> - Tìm hiểu về dịch vụ AWS Fargate <br> - So sánh giữa EC2, Lambda, Fargate trong các trường hợp khác nhau                                                                                         | 09/10/2026   | 09/10/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 2:
@@ -31,26 +31,50 @@ pre: " <b> 1.2. </b> "
   * Bên trong một mô hình được huấn luyện bằng Gradient descent sẽ như thế nào
   * Mối liên hệ của Gradient descent với Learning rate
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Phân biệt các kiểu dữ liệu của từng Feature:
+  * Nominal
+  * Ordinal
+  * Ratio
+  * Interval
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu cách ứng dụng Scaling Feature và các phương pháp của nó: 
+  * Thời điểm nên dùng Scaling Feature
+  * Standardization và ứng dụng
+  * Min-Max Normalization và ứng dụng
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Học được cách sử dụng One-Hot Encoding trên tập dữ liệu Nominal để mô hình không bị nhận thông tin rác khi huấn luyện.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hiểu ứng dụng của EC2, mối liên hệ giữa EC2 và AMI.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Tạo một EC2 sử dụng VPC mặc định bao gồm:
+  * Instance Type
+  * EBS (Elastic Block Store)
+  * Key Pair
+  * Elastic ID
+  * Security Group
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Phân biệt được giữa Instance Store và EBS, khi nào nên lưu dữ liệu ở cái nào.
+
+* Biết được cách chọn Instance Type phù hợp cho từng tác vụ:
+  * Dòng P hoặc G: Có GPU của NVIDIA. Chuyên dùng để train Deep Learning hoặc chạy model nặng (như LLM)
+  * Dòng R: Rất nhiều RAM. Dùng khi xử lý lượng dữ liệu lớn cần load toàn bộ tập dữ liệu vào bộ nhớ
+  * Dòng C: Rất nhiều CPU. Dùng để xử lý logic, crawl data tốc độ cao
+  * Dòng T hoặc M: Cân bằng CPU/RAM. Dùng làm Web Server, chạy API backend bình thường
+
+* Hiểu được cơ bản về S3:
+  * Biết cách chọn S3 cho phù hợp với nhu cầu 
+  * Hiểu cách hoạt động tính năng Multipart Upload của S3
+  * Biết tùy chỉnh quyền truy cập cho những đối tượng cụ thể
+
+* Cần phải nén dữ liệu trước khi upload lên S3 để giảm đáng kể chi phí Request (Ví dụ: nén từ 1 triệu file .png khác nhau thành 1 file .zip).
+
+* Hiểu được Serverless là gì, khi nào thì cần phải dùng Serverless.
+
+* Biết được cách ứng dụng của các dịch vụ như EC2, Lambda, Fargate cho từng trường hợp:
+  * Chi phí
+  * Latency
+  * Tốc độ mở rộng
+  * Hỗ trợ huấn luyện AI
+  * Độ trễ khởi động
 
 
